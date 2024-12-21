@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6fa6d2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f9ff;
+    box-shadow: 0 0 10px rgba(34, 145, 155, 0.818);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.input-section, .output-section {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(34, 145, 155, 0.818);
+    border-radius: 4px;
+}
+
+.button-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    width: auto;
+    min-width: 200px;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.matrix-inputs, .vector-inputs {
+    display: flex !important;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.matrix-inputs div, .vector-inputs div {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="number"] {
+    width: 70px;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="number"]:focus-visible {
+    outline: none;
+    border: 2px solid #0056b3;
+    border-radius: 5px;
+}
+
+pre {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.matrix, .vector {
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.matrix td, .vector td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.matrix td {
+    width: 50px;
+}
+
+.vector td {
+    width: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

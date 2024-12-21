@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LU Decomposition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LU Decomposition</h1>
+        <div class="input-section">
+            <h2>Matrix Dimensions</h2>
+            <label for="matrixSize">Enter matrix size (n x n):</label>
+            <input type="number" id="matrixSize" min="2" max="10" value="3">
+            <div class="button-wrapper">
+                <button onclick="generateMatrixInputs()">Generate Matrix Inputs</button>
+            </div>
+            
+            <div id="matrixInputs" class="matrix-inputs"></div>
+            
+            <h2 id="txtInput" class="hidden">Input Vector B</h2>
+            <div id="vectorInputs" class="vector-inputs hidden"></div>
+
+            <div class="button-wrapper hidden" id="solveButton">
+                <button onclick="performLUDecomposition()">Decompose and Solve</button>
+            </div>
+        </div>
+        <div class="output-section hidden" id="outputSection">
+            <h2>Output</h2>
+            <pre id="output"></pre>
+        </div>
+    </div>
+    <script src="lu.js"></script>
+</body>
+</html>
